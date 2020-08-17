@@ -1,12 +1,3 @@
-/**
- * File : admin.js
- * 
- * This file contain the validation of add user form
- * 
- * Using validation plugin : jquery.validate.js
- * 
- */
-
 $(document).ready(function(){
 	
 	var addadminForm = $("#registerForm");

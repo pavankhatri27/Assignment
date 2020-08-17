@@ -25,19 +25,19 @@
                     <div class="row">
                         <form action="<?php echo base_url('sendMail')?>" method="post" id="contactForm">
                             <fieldset class="col-md-6">
-                                <input type="text" class="required" name="contact-name" id="contact-name" placeholder="Name...">
+                                <input type="text" class="required" name="contact-name" id="contactName" placeholder="Name...">
                             </fieldset>
                             <fieldset class="col-md-6">
-                                <input type="email" class="required email" name="contact-email" id="contact-email" placeholder="Email...">
+                                <input type="email" class="required email" name="contact-email" id="contactEmail" placeholder="Email...">
                             </fieldset>
                             <fieldset class="col-md-6">
-                                <input type="text" class="required digits" name="contact-phone" id="contact-phone" placeholder="Phone..." onkeypress="return isNumber(event)">
+                                <input type="text" class="required digits" name="contact-phone" id="contactPhone" placeholder="Phone..." onkeypress="return isNumber(event)">
                             </fieldset>
                             <fieldset class="col-md-6">
-                                <input type="text" class="required" name="contact-subject" id="contact-subject" placeholder="Subject...">
+                                <input type="text" class="required" name="contact-subject" id="contactSubject" placeholder="Subject...">
                             </fieldset>
                             <fieldset class="col-md-12">
-                                <textarea name="contact-message" class="required" id="contact-message" rows="5" placeholder="Message..."></textarea>
+                                <textarea name="contact-message" class="required" id="contactMessage" rows="5" placeholder="Message..."></textarea>
                             </fieldset>
                             <fieldset class="col-md-12">
                                 <button class="main-button">Send Message</button>

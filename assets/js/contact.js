@@ -1,12 +1,3 @@
-/**
- * File : admin.js
- * 
- * This file contain the validation of add user form
- * 
- * Using validation plugin : jquery.validate.js
- * 
- */
-
 $(document).ready(function(){
 	
 	var addadminForm = $("#contactForm");
@@ -14,18 +5,18 @@ $(document).ready(function(){
 	var validator = addadminForm.validate({
 		
 		rules:{
-			contact-name :{ required : true },
-			contact-email : { required : true, email : true },
-			contact-phone : { required : true, digits : true },
-			contact-subject : { required : true },
-			contact-message : { required : true },
+			contactName :{ required : true },
+			contactEmail : { required : true, email : true },
+			contactPhone : { required : true, digits : true },
+			contactSubject : { required : true },
+			contactMessage : { required : true },
 		},
 		messages:{
-			contact-name :{ required : "This Name is required" },
-			contact-email : { required : "This Email address is required", email : "Please enter valid Email address" },
-			contact-phone : { required : "This Phone No. is required", digits : "Please enter Numbers only" },
-			contact-subject : { required : "This Subject is required"},
-			contact-message : { required : "This Message is required" },
+			contactName :{ required : "This Name is required" },
+			contactEmail : { required : "This Email address is required", email : "Please enter valid Email address" },
+			contactPhone : { required : "This Phone No. is required", digits : "Please enter Numbers only" },
+			contactSubject : { required : "This Subject is required"},
+			contactMessage : { required : "This Message is required" },
 		}
 	});
 });
