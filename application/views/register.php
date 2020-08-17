@@ -32,7 +32,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="age">Age</label>
-                                                <input type="text" class="form-control required" id="age" name="age" placeholder="Age">
+                                                <input type="text" class="form-control required digits" id="age" name="age" placeholder="Age" onkeypress="return isNumber(event)">
                                             </div>
                                             <div class="form-group">
                                                 <label for="email">Email</label>

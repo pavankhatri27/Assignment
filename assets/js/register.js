@@ -16,7 +16,7 @@ $(document).ready(function(){
 		rules:{
 			fname :{ required : true },
 			lname :{ required : true },
-			age : { required : true },
+			age : { required : true, digits : true },
 			email : { required : true, email : true, remote : { url : baseURL + "Assignment/checkEmailExists", type :"post"} },
 			password : { required : true },
 			confirmPassword : { required : true, equalTo: "#password" },
@@ -28,7 +28,7 @@ $(document).ready(function(){
 		messages:{
 			fname :{ required : "This First Name is required" },
 			lname :{ required : "This Last Name is required" },
-			age : { required : "This Age is required" },
+			age : { required : "This Age is required", digits : "Please enter Numbers only" },
 			email : { required : "This Email address is required", email : "Please enter valid Email address", remote : "Email already taken" },
 			password : { required : "This Password is required" },
 			confirmPassword : {required : "This Confirm Password is required", equalTo: "Please enter same Password" },
