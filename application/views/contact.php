@@ -45,10 +45,10 @@
                         </form>
                         <?php
                          if($this->session->flashdata('success_email')){
-                            echo '<div class="col-sm-12 fit-to-screen"><div class="alert alert-success"><strong>Success! </strong>'.$this->session->flashdata('succces').'</div></div>';
+                            echo '<div class="col-sm-12 fit-to-screen"><div class="alert alert-success"><strong>Success! </strong>'.$this->session->flashdata('success_email').'</div></div>';
                          }
                          if($this->session->flashdata('error_email')){
-                            echo '<div class="col-sm-12 fit-to-screen"><div class="alert alert-danger"><strong>Oops! </strong>'.$this->session->flashdata('error').'</div></div>';
+                            echo '<div class="col-sm-12 fit-to-screen"><div class="alert alert-danger"><strong>Oops! </strong>'.$this->session->flashdata('error_email').'</div></div>';
                          }
                         ?>
                     </div>
