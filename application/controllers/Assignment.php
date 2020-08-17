@@ -25,6 +25,20 @@ class Assignment extends CI_Controller {
 	{
 		$this->load->view('register');
 	}
+	public function checkEmailExists()
+    {
+        $id = $this->input->post("id");
+        $email = $this->input->post("email");
+
+        if(empty($id)){
+            $result1 = $this->assignment_model->checkEmail($email);
+        } else {
+            $result1 = $this->assignment_model->checkEmail($email, $id);
+        }
+
+        if(empty($result1)){ echo("true"); }
+        else { echo("false"); }
+    }
 	public function registerAdd()
 	{                    
         $this->form_validation->set_rules('fname','First Name','trim|required|alpha');
